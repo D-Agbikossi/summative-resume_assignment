@@ -1,95 +1,80 @@
-/* Importing fonts */
-/* @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Dancing+Script&display=swap');*/
+/*header {*/
+/*    background-color: indianred;*/
+/*    height: 120px;*/
+/*    width: 100%;*/
+/*}*/
 
-/* General body styling */
-body {
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-    padding: 0
-    line-height: 1.6;
+/*.buttons {*/
+/*    position: fixed;*/
+/*    left: 400px;*/
+/*}*/
+
+/*.sidebar-container {*/
+/*    position: absolute;*/
+/*    background-color: indianred;*/
+/*    height: 100%;*/
+/*    width: 20%;*/
+/*    right: 0%;*/
+/*}*/
+
+/*image-container {*/
+/*        border-radius: 60%;*/
+/*        position: relative;*/
+/*        left: 0%;*/
+/*}*/
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Header styling */
-.header {
-
-    background-size: cover; /* Cover the entire header */
-    background-position: center; /* Center the image */
-    color: white;
-    padding: 10px 0;
+/* Header Section */
+header {
+    background-color: indianred;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Added padding for better spacing */
 }
 
-.nav {
-    list-style: none;
-    padding: 0;
-    text-align: left; /* Align the navigation items to the right */
+/* Button Container */
+.buttons {
+    position: fixed;
+    top: 20px; /* Add some vertical spacing from the top */
+    left: 50%; /* Centers the buttons container */
+    transform: translateX(-50%); /* Adjust the left position to center exactly */
+    display: flex;
+    gap: 15px; /* Spacing between buttons */
 }
 
-.nav-item {
-    display: inline;
-    margin: 0 15px;
+/* Sidebar Container */
+.sidebar-container {
+    position: fixed; /* Changed from absolute to fixed for better responsiveness */
+    background-color: indianred;
+    height: 100%;
+    width: 20%;
+    right: 0;
+    top: 0; /* Ensures it starts at the top */
+    display: flex;
+    flex-direction: column; /* Aligns the content vertically */
+    justify-content: center; /* Centers the content vertically */
+    padding: 20px; /* Adds padding for better alignment */
 }
 
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold; /* Bold navigation links */
+/* Image Container */
+.image-container {
+    border-radius: 50%; /* Fixed to make the image perfectly circular */
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    width: 120px; /* Defined a fixed size for the image */
+    height: 120px; /* Keep it square for a circular image */
+    margin: 0 auto; /* Centers the image inside the container */
 }
 
-/* Main section styling */
-.presentation {
-    text-align: center;
-    padding: 20px;
-}
-
-.summary {
-    margin: 20px 0;
-}
-
-.summary img {
-    border-radius: 50%; /* Making the picture circular */
-    width: 150px; /* Width of the image */
-    height: 150px; /* Height of the image */
-}
-
-h1 {
-    font-family: 'Dancing Script', cursive; /* Title font */
-    font-weight: bold; /* Bold title */
-}
-
-h2 {
-    font-family: 'Dancing Script', cursive; /* Section title font */
-    font-weight: bold; /* Bold section titles */
-    margin-top: 20px; /* Space above section titles */
-}
-
-h2,
-h1,
-p {
-    margin: 10px 0; /* Space between elements */
-}
-
-a {
-    text-decoration: none; /* Remove underline from links */
-}
-
-/* Social links */
-.social {
-    list-style: none;
-    padding: 0;
-}
-
-.social-item {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer {
-    text-align: center; /* Center footer content */
-    padding: 10px 0;
-    background-color: #333; /* Dark footer background color */
-    color: white; /* White text in footer */
-}
-
-.footer-copyright {
-    margin: 0;
+/* Example: Image Styling (If you need to style the image specifically) */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits perfectly within the container */
 }

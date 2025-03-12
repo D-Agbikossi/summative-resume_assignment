@@ -1,90 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Curriculum Vitae - Denaton Agbikossi</title>
+
     <meta name="description" content="Personal resume of Denaton Agbikossi">
     <link rel="icon" type="image/png" href="images/cvicon.png">
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<!-- Header -->
-<header class="header">
-<div class="header-container">
-    <nav class="navbar-menu">
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#education_&_projects" class="nav-link">Education & Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills_&_experience" class="nav-link">Skills & Experience</a>
-            </li>
-            <li class="nav-item">
-                <a href="#activities" class="nav-link">Activities</a>
-            </li>
-        </ul>
-    </nav>
-</div>
+<!--Header Section-->
+<header>
+    <!--Container Section-->
+    <div class="header-container">
+        <div class="buttons">
+
+            <a href="#about"><button>About</button></a>
+            <a href="#education"><button>Education</button></a>
+            <a href="#skills"><button>Skills</button></a>
+            <a href="#experience"><button>Experience</button></a>
+            <a href="#activities"><button>Activities</button></a>
+            <a href="#contact"><button>Contact</button></a>
+        </div>
+    </div>
+
+    <!--Sidebar-->
+    <div class="sidebar-container">
+        <div class="image-container">
+            <img src="images/picture.png" alt="Denaton Agbikossi's Picture">
+        </div>
+        <div class="summary">
+            <h1>Denaton Brunelle Agbikossi</h1>
+            <p>Bachelor in Software Engineering (BSE)</p>
+            <p>African Leadership University, Rwanda</p>
+            <p><a href="mailto:d.agbikossi@alustudent.com">d.agbikossi@alustudent.com</a></p>
+            <p>+250 793224025 / +229 56460681</p>
+        </div>
+    </div>
 </header>
 
-<!-- Main -->
+<!--Main Section-->
 <main>
-    <section class="presentation">
-        <div class="container">
-            <div class="body">
-                <div class="welcome">
-                    <p>Hello, I am </p>
-                    <p>Denaton Agbikossi</p>
-                </div>
-                <div class="summary">
-                    <img src="images/picture.png" alt="Denaton Agbikossi's Picture">
-                    <h1>Denaton Brunelle Agbikossi</h1>
-                    <p>Bachelor in Software Engineering (BSE)</p>
-                    <p>African Leadership University, Rwanda</p>
-                    <p>Email: <a href="mailto:d.agbikossi@alustudent.com">d.agbikossi@alustudent.com</a></p>
-                    <p>Phone: +250 793224025 / +229 56460681</p>
-                </div>
-                <ul class="social">
-                    <li class="social-item">
-                        <a href="https://www.linkedin.com/in/denaton-agbikossi-a008112b5" class="social-link">
-                            <img src="images/pic-link.png" alt="LinkedIn Icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
     <section id="about" class="section-about">
         <h2>About</h2>
         <p>I am dedicated to uplifting underserved communities across Africa, with a particular focus on Benin. My vision is for a world where everyone has the opportunity to realize their dreams, regardless of their background or social status. By empowering individuals, I believe we can foster true independence for African nations. I am eager to connect with like-minded individuals and organizations committed to this mission. Let's collaborate to create impactful solutions for communities in need.</p>
     </section>
-    <section id="education_&_projects" class="section-education_&_projects">
+
+    <section id="education" class="section-education">
         <h2>Education</h2>
         <p>African Leadership University, Bachelor of Software Engineering, January 2024 - Present</p>
         <p>University of Auckland, Bachelor of Engineering (Honours), 2021 - 2023</p>
         <p>Taylor's College, Foundation Certificate, 2020 - 2021</p>
         <p>College Catholique Saint Jean Baptiste, Science and Technology, 2015 - 2018</p>
+    </section>
 
+    <section id="projects" class="section-projects">
         <h2>Projects</h2>
         <p>Visual Cryptography using MATLAB, School project, A program that encryptss and decrypts messages, 2021</p>
         <p>Container Yard using C language, School project, A program that helps organise and optimize space usage in a yard containing containers, 2021</p>
         <p>Crisis guard using Python, School project, An app designs to help people during crises, 2024</p>
         <p>Grade book  using Python, School project, An app that creates and manages student records, course records, and transcripts, 2024 </p>
     </section>
-    <section id="skills_&_experience" class="section-skills_&_experience">
+
+    <section id="skills" class="section-skills">
         <h2>Skills</h2>
         <p>Coding: Python, Linux, C, HTML5, CSS, JavaScript</p>
         <p>Language Proficiency: French, English, Fon</p>
         <p>Proficient in Microsoft Office Suite</p>
+    </section>
 
+    <section id="experience" class="section-experience">
         <h2>Experience</h2>
         <p>Executive assistant, T Gagnant Inter, Cotonou, Benin, 2021 - 2023</p>
     </section>
+
     <section id="activities" class="section-activities">
         <h2>Activities</h2>
         <p>Founder's Society, Operations Director, African Leadership University, 2024 - Present</p>
@@ -92,11 +85,13 @@
         <p>She Code ALU, 2024- Present</p>
     </section>
 </main>
-<!-- Footer -->
+
+<!--Footer Section-->
 <footer class="footer">
     <div class="container">
         <p class="footer-copyright">© 2024 by Denaton Brunelle.</p>
     </div>
 </footer>
+
 </body>
 </html>
